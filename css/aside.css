@@ -1,0 +1,48 @@
+aside {
+  font-size: 1.4rem;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.header-aside {
+  background-color: #f6e200;
+  font-size: 2.1rem;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 60px 30px;
+}
+
+.aside-bg {
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+.container-menu {
+  max-width: max-content;
+  padding: 10px 30px;
+}
+
+.menu {
+  position: fixed;
+}
+
+.menu li {
+  width: 100%;
+  padding: 20px 30px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu li:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+.subMenu {
+  padding: 10px 20px;
+  display: none;
+}

@@ -1,0 +1,29 @@
+main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.exemplo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #e3e3e3;
+  color: #111;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 20px;
+  position: relative;
+}
+
+.exemplo::before {
+  content: "";
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  background-color: #f6e200;
+  left: 0;
+  top: 0;
+}
+
+.exemplo span {
+  color: rgb(86, 86, 86);
+}

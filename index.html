@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Javascript Technical Documentation</title>
+  </head>
+  <body>
+    <aside class="aside-bg">
+      <header class="header-aside">
+        JS Technical Documentation
+      </header>
+      <ul class="menu container-menu">
+        <li>
+          Variables
+          <ul class="subMenu inativo">
+            <li><a href="var">var</a></li>
+            <li><a href="let">let</a></li>
+            <li><a href="const">const</a></li>
+          </ul>
+        </li>
+        <li>
+          Data Types
+          <ul class="subMenu inativo">
+            <li><a href="string">String</a></li>
+            <li><a href="number">Number</a></li>
+            <li><a href="array">Array</a></li>
+            <li><a href="object">Object</a></li>
+          </ul>
+        </li>
+        <li>
+          Conditional Structures
+          <ul class="subMenu inativo">
+            <li><a href="if-else">If Else</a></li>
+            <li><a href="switch-case">Switch Case</a></li>
+          </ul>
+        </li>
+        <li>
+          Repetition Structures
+          <ul class="subMenu inativo">
+            <li><a href="while">While</a></li>
+            <li><a href="for">For</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <main class="container">
+      <h1 class="titulo-maior">Variables</h1>
+      <h2 class="titulo-menor">var</h2>
+      <p>
+        The <span>var</span> statement declares a function-scoped or
+        globally-scoped variable, optionally initializing it to a value.
+      </p>
+      <div class="exemplo">
+        var x = 1; <br /><br />
+        if (x === 1) { <br />var x = 2; <br />console.log(x);<span
+          >// expected output: 2</span
+        ><br />
+        } <br />
+        console.log(x);<span>// expected output: 2</span>
+      </div>
+      <h2 class="titulo-menor">let</h2>
+      <p>
+        The <span>let</span> declaration declares a block-scoped local variable,
+        optionally initializing it to a value.
+      </p>
+
+      <div class="exemplo">
+        let x = 1;<br />
+        if (x === 1) {<br />
+        let x = 2;<br />
+        console.log(x);
+        <span>// expected output: 2</span> <br />
+        } console.log(x);
+        <span>// expected output: 1</span>
+      </div>
+      <h2 class="titulo-menor">const</h2>
+      <p>
+        A <span>const</span> variable cannot be reassigned and must be assigned
+        a value when they are declared:
+      </p>
+      <div class="exemplo">
+        const PI = 3.141592653589793; <br />
+        PI = 3.14; <span>// This will give an error </span><br />
+        PI = PI + 10; <span>// This will also give an error</span> <br /><br />
+        const PI = 3.14159265359; <span>//CORRECT</span> <br /><br />
+        const PI;<br />
+        PI = 3.14159265359; <span>//INCORRECT</span>
+      </div>
+
+      <h1 class="titulo-maior">Data Types</h1>
+      <h2 class="titulo-menor">String</h2>
+      <p>
+        A string (or a text string) is a series of characters like "John Doe".
+        <br />
+        Strings are written with quotes. You can use single or double quotes:
+      </p>
+
+      <div class="exemplo">
+        let carName1 = "Volvo XC60"; <span>// Using double quotes</span> <br />
+        let carName2 = 'Volvo XC60'; <span>// Using single quotes</span>
+      </div>
+
+      <p>
+        You can use quotes inside a string, as long as they don't match the
+        quotes surrounding the string:
+      </p>
+
+      <div class="exemplo">
+        let answer1 = "It's alright";
+        <span> // Single quote inside double quotes</span>
+        <br />
+        let answer2 = "He is called 'Johnny'";
+        <span> // Single quotes inside double quotes</span> <br />
+        let answer3 = 'He is called "Johnny"';
+        <span>// Double quotes inside single quotes</span>
+      </div>
+
+      <h2 class="titulo-menor">Number</h2>
+      <p>
+        JavaScript has only one type of numbers. Numbers can be written with, or
+        without decimals:
+      </p>
+      <div class="exemplo">
+        let x1 = 34.00; <span>// Written with decimals</span> <br />
+        let x2 = 34; <span>// Written without decimals</span>
+      </div>
+      <p>
+        Extra large or extra small numbers can be written with scientific
+        (exponential) notation:
+      </p>
+      <div class="exemplo">
+        let y = 123e5; <span>// 12300000 </span><br />
+        let z = 123e-5; <span>// 0.00123</span>
+      </div>
+
+      <h2 class="titulo-menor">Boolean</h2>
+      <p>
+        Booleans can only have two values: <span>true</span> or
+        <span>false</span>. <br />
+        Booleans are often used in conditional testing.
+      </p>
+      <div class="exemplo">
+        let x = 5; <br />
+        let y = 5; <br />
+        let z = 6; <br />
+        (x == y) <span>// Returns true</span> <br />
+        (x == z) <span>// Returns false</span>
+      </div>
+
+      <h2 class="titulo-menor">Array</h2>
+      <p>
+        JavaScript arrays are written with square brackets. <br />
+        Array items are separated by commas. <br />
+        Array indexes are zero-based, which means the first item is [0], second
+        is [1], and so on. <br />
+        The following code declares (creates) an array called cars, containing
+        three items (car names):
+      </p>
+
+      <div class="exemplo">const cars = ["Saab", "Volvo", "BMW"];</div>
+
+      <h2 class="titulo-menor">Object</h2>
+      <p>
+        JavaScript objects are written with curly braces <span>{}</span>. <br />
+
+        Object properties are written as name:value pairs, separated by commas.
+      </p>
+      <div class="exemplo">
+        const person = {firstName:"John", lastName:"Doe", age:50,
+        eyeColor:"blue"};
+      </div>
+      <p>
+        The object (person) in the example above has 4 properties: firstName,
+        lastName, age, and eyeColor.
+      </p>
+
+      <h2 class="titulo-menor">Undefined</h2>
+      <p>
+        In JavaScript, a svariable without a value, has the value undefined. The
+        type is also undefined.
+      </p>
+      <div class="exemplo">
+        let car; <span>// Value is undefined, type is undefined
+        </div></span>
+      <p>
+        Any variable can be emptied, by setting the value to undefined. The type
+        will also be undefined.
+      </p>
+      <div class="exemplo">
+        car = undefined; <span>// Value is undefined, type is undefined</span>
+      </div>
+    </main>
+  </body>
+</html>

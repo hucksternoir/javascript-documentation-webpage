@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p,
+li,
+a {
+  font-family: "IBM Plex Sans";
+}
+
+p {
+  font-size: 1.35rem;
+  line-height: 2.75rem;
+}
+
+p span {
+  background-color: #e3e3e3;
+  padding: 0px 5px;
+  font-family: "IBM Plex Mono";
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin-left: 440px;
+  max-width: 1200px;
+}
+
+.titulo-maior {
+  font-size: 3.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 20px;
+  margin-top: 32px;
+}
+
+.titulo-menor {
+  font-size: 2.1rem;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+}
+
+.inativo {
+  display: none;
+}
+
+.ativo {
+  display: block;
+}
