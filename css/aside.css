@@ -14,6 +14,7 @@ aside {
   font-size: 2.1rem;
   font-family: "IBM Plex Mono", monospace;
   padding: 60px 30px;
+  margin-bottom: 30px;
 }
 
 .aside-bg {
@@ -22,27 +23,54 @@ aside {
 }
 
 .container-menu {
-  max-width: max-content;
   padding: 10px 30px;
 }
 
-.menu {
-  position: fixed;
-}
-
 .menu li {
-  width: 100%;
   padding: 20px 30px;
   display: block;
   position: relative;
   cursor: pointer;
 }
 
-.menu li:hover {
-  background-color: rgb(206, 206, 206);
+.menu li:hover::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #f6e200;
 }
 
-.subMenu {
-  padding: 10px 20px;
+.dropbtn {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.titulo h3 {
+  cursor: pointer;
+}
+
+.dropdown-content {
   display: none;
+  max-height: 0;
+  transition-duration: 0.6s;
+}
+
+.dropdown-content .show-text {
+  display: block;
+}
+
+.dropdown-content .show-text p {
+  cursor: pointer;
+}
+
+.titulo {
+  margin-bottom: 30px;
 }

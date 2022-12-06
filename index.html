@@ -12,39 +12,28 @@
       <header class="header-aside">
         JS Technical Documentation
       </header>
-      <ul class="menu container-menu">
-        <li>
-          Variables
-          <ul class="subMenu inativo">
-            <li><a href="var">var</a></li>
-            <li><a href="let">let</a></li>
-            <li><a href="const">const</a></li>
-          </ul>
-        </li>
-        <li>
-          Data Types
-          <ul class="subMenu inativo">
-            <li><a href="string">String</a></li>
-            <li><a href="number">Number</a></li>
-            <li><a href="array">Array</a></li>
-            <li><a href="object">Object</a></li>
-          </ul>
-        </li>
-        <li>
-          Conditional Structures
-          <ul class="subMenu inativo">
-            <li><a href="if-else">If Else</a></li>
-            <li><a href="switch-case">Switch Case</a></li>
-          </ul>
-        </li>
-        <li>
-          Repetition Structures
-          <ul class="subMenu inativo">
-            <li><a href="while">While</a></li>
-            <li><a href="for">For</a></li>
-          </ul>
-        </li>
-      </ul>
+      <nav class="menu container-menu">
+        <div class="titulo">
+          <h3>Variables</h3>
+          <div class="dropdown-content show-text">
+            <p>var</p>
+            <p>let</p>
+            <p>const</p>
+          </div>
+        </div>
+        <div class="titulo">
+          <h3>Data Types</h3>
+          <div class="dropdown-content show-text">
+            <p>String</p>
+            <p>Number</p>
+            <p>Boolean</p>
+            <p>Array</p>
+            <p>Object</p>
+            <p>Undefined</p>
+          </div>
+        </div>
+        
+      </nav>
     </aside>
     <main class="container">
       <h1 class="titulo-maior">Variables</h1>
@@ -193,6 +182,6 @@
         car = undefined; <span>// Value is undefined, type is undefined</span>
       </div>
     </main>
-    <script src="/script/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
